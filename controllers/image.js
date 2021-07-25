@@ -1,8 +1,13 @@
 const Clarifai = require('clarifai');
 
+// const app = new Clarifai.App({
+//     //apiKey: 'c69555346ad2400ea354823b153fb0c0'
+//     apiKey: 'c0c0ac362b03416da06ab3fa36fb58e3'
+// });
+
+//You must add your own API key here from Clarifai.
 const app = new Clarifai.App({
-    //apiKey: 'c69555346ad2400ea354823b153fb0c0'
-    apiKey: 'c0c0ac362b03416da06ab3fa36fb58e3'
+    apiKey: 'c69555346ad2400ea354823b153fb0c0'
 });
 
 const handleApiCall = (req, res) => {
@@ -26,5 +31,6 @@ const handleImage = (req, res) => {
 }
 
 module.exports = {
-    handleImage
+    handleImage,
+    handleApiCall
 }
